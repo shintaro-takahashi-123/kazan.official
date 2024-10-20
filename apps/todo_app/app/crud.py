@@ -6,7 +6,7 @@ from . import models, schemas
 # Todoの作成
 def create_todo(db: Session, todo: schemas.TodoCreate):
     db_todo = models.Todo(title=todo.title)
-    db.add(db_todo)
+    db.add(db_todo)     # 
     db.commit()
     db.refresh(db_todo)
     return db_todo

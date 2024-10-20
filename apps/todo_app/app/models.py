@@ -1,4 +1,5 @@
 # データベースのモデルの定義を行うファイル
+
 from sqlalchemy import Column, Integer, String, Boolean
 from .database import Base  # Base は declarative_base() で定義されており、すべてのモデル（テーブル定義）が継承する基盤クラス
 
